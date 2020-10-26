@@ -7,13 +7,10 @@ package logica;
 
 import java.io.File;
 import java.io.FileFilter;
-import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import static java.util.concurrent.ThreadLocalRandom.current;
-
 
 /**
  * Clase con diversos métodos para manejar ficheros.
@@ -91,5 +88,29 @@ public class OperacionesFicheros {
             }
         }
         return listaFicheros;
+    }
+    
+    public int crearDirectorios(File rutaOrigen, ArrayList<String> listaDirectorios) throws Excepciones.laRutaIndicadaNoExiste,Excepciones.elDirectorioYaExiste {
+        int contadorDirectoriosCreados = 0;
+        File directorioACrear;
+        String rutaDirectorio;
+        
+        if (rutaOrigen.exists() == false) {
+            throw new Excepciones.laRutaIndicadaNoExiste();
+        } else {
+            for (String listaDirectorio : listaDirectorios) {
+                rutaDirectorio = rutaOrigen.getPath() + "/" + listaDirectorio; // Concateno la rutaOrigen y el nombre del directorio
+                System.out.println(rutaDirectorio);
+                directorioACrear = new File(rutaDirectorio);
+                if(!directorioACrear.exists()){
+                    directorioACrear.mkdir(); // Uso mkdir() porque no quiero que cree los padres
+                    System.out.println("Directorio " + rutaDirectorio + " creado.");
+                    contadorDirectoriosCreados++;
+                } else if(directorioACrear.exists()) {
+                    throw new Excepciones.elDirectorioYaExiste(); // TODO -> Me para el programa al lanzar la excepción. Revisar
+                }
+            }
+        }
+        return contadorDirectoriosCreados;
     }
 }
