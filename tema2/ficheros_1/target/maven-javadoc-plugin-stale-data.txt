@@ -1,0 +1,42 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/../bin/javadoc
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2020. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'ficheros_1 1.0 API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'ficheros_1 1.0 API'
+controlador
+logica
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/src/main/java = 1603447183000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/constant-values.html = 1603708789000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/overview-tree.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/index.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/overview-frame.html = 1603708789000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/allclasses-noframe.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/serialized-form.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/index-all.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/deprecated-list.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/script.js = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/stylesheet.css = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/overview-summary.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/help-doc.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/allclasses-frame.html = 1603708790000
+/Users/pherrero/Documents/repositorios/dam_ad2021/tema2/ficheros_1/target/site/apidocs/package-list = 1603708789000
