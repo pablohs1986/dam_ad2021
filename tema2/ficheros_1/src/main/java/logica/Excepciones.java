@@ -48,4 +48,27 @@ public class Excepciones extends Exception {
             return mensaje;
         }
     }
+    
+    
+    public static class laRutaIndicadaNoExiste extends Exception {
+        public laRutaIndicadaNoExiste() {
+        }
+
+        @Override
+        public String getMessage() {
+            String mensaje = "La ruta indicada no existe.";
+            return mensaje;
+        }
+    }
+    
+    public static class elDirectorioYaExiste extends Exception {
+        public elDirectorioYaExiste() {
+        }
+
+        @Override
+        public String getMessage() {
+            String mensaje = "El directorio indicado ya existe";
+            return mensaje;
+        }
+    }
 }
