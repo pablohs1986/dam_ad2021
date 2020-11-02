@@ -13,9 +13,6 @@ package logica;
 public class Excepciones extends Exception {
     /**
      * Excepción lanzada si se detecta un directorio está vacío.
-     *
-     * @version 1.1, 25/10/2020
-     * @author Pablo Herrero
      */
     public static class carpetaVacia extends Exception {
         public carpetaVacia() {
@@ -34,9 +31,6 @@ public class Excepciones extends Exception {
     
     /**
      * Excepción lanzada si el archivo que se recibe no es un directorio.
-     *
-     * @version 1.1, 25/10/2020
-     * @author Pablo Herrero
      */
     public static class noEsUnDirectorioNoSePuedeListar extends Exception {
         public noEsUnDirectorioNoSePuedeListar() {
@@ -49,7 +43,9 @@ public class Excepciones extends Exception {
         }
     }
     
-    
+    /**
+     * Excepción lanzada si la ruta indicada no existe.
+     */
     public static class laRutaIndicadaNoExiste extends Exception {
         public laRutaIndicadaNoExiste() {
         }
@@ -61,6 +57,9 @@ public class Excepciones extends Exception {
         }
     }
     
+    /**
+     * Excepción lanzada si el directorio no existe
+     */
     public static class elDirectorioYaExiste extends Exception {
         public elDirectorioYaExiste() {
         }

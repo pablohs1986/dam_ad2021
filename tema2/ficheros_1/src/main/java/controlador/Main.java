@@ -39,7 +39,7 @@ public class Main {
         File ruta = new File("/Users/pherrero/Downloads/");
         ArrayList<String> listadoDirectoriosACrear = new ArrayList<>();
         listadoDirectoriosACrear.add("directorioPrueba1");
-        listadoDirectoriosACrear.add("directorioPrueba1");
+        listadoDirectoriosACrear.add("directorioPrueba6");
         listadoDirectoriosACrear.add("directorioPrueba2");
         
         try {
