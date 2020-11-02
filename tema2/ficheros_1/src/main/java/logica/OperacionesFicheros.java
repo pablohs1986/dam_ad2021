@@ -14,18 +14,21 @@ import java.util.List;
 
 /**
  * Clase con diversos métodos para manejar ficheros.
- * @version 1.1, 25/10/2020
+ * @version 1.2, 02/11/2020
  * @author Pablo Herrero
  */
 public class OperacionesFicheros {
     /**
      * Apartado A:
-     * Lista los ficheros de un directorio, tomando una ruta dada o el root del
+     * Lista los ficheros y/o directorios, tomando una ruta dada o el root del
      * OS, permitiendo ordenar el resultado alfabéticamente y/o mostrar sólo
      * los directorios.
      * @param ruta La ruta del directorio.
      * @param ordenadosPorNombre True si se desea ordenar por nombre.
      * @param soloDirectorios True si se desea mostrar sólo los directorios.
+     * @return Devuelve un listado con los ficheros y/o directorios de la ruta indicada.
+     * @throws logica.Excepciones.carpetaVacia
+     * @throws logica.Excepciones.noEsUnDirectorioNoSePuedeListar
      */
     public List<File> listarFicheros(String ruta, boolean ordenadosPorNombre, boolean soloDirectorios) throws Excepciones.carpetaVacia, Excepciones.noEsUnDirectorioNoSePuedeListar {
         File[] root = File.listRoots();
@@ -90,6 +93,15 @@ public class OperacionesFicheros {
         return listaFicheros;
     }
     
+    /**
+     * Apartado B: 
+     * Crea los directorios que recibe de un listado en la ruta indicada.
+     * @param rutaOrigen La ruta donde se desean crear los directorios.
+     * @param listaDirectorios Listado de los directorios a crear
+     * @return EL número de directorios creados.
+     * @throws logica.Excepciones.laRutaIndicadaNoExiste
+     * @throws logica.Excepciones.elDirectorioYaExiste
+     */
     public int crearDirectorios(File rutaOrigen, ArrayList<String> listaDirectorios) throws Excepciones.laRutaIndicadaNoExiste,Excepciones.elDirectorioYaExiste {
         int contadorDirectoriosCreados = 0;
         File directorioACrear;
@@ -107,7 +119,7 @@ public class OperacionesFicheros {
                     System.out.println("Directorio " + rutaDirectorio + " creado.");
                     contadorDirectoriosCreados++;
                 } else if(directorioACrear.exists()) {
-                    throw new Excepciones.elDirectorioYaExiste(); // TODO -> Me para el programa al lanzar la excepción. Revisar
+                    throw new Excepciones.elDirectorioYaExiste();
                 }
             }
         }
