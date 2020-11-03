@@ -3,14 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package logica;
+package modelo;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Clase con diversos métodos para manejar ficheros.
@@ -37,7 +40,7 @@ public class OperacionesFicheros {
         File directorio;
         
         // I. Si la ruta está vacía, se asigna el root dependiendo del OS.
-        if (ruta.isEmpty()) {
+        if (ruta.isEmpty()) { 
             for (int i = 0; i < root.length; i++) {
                 ruta = root[i].getPath();
                 System.out.println("Unidad " + i + ": " + root[i]);
@@ -125,4 +128,30 @@ public class OperacionesFicheros {
         }
         return contadorDirectoriosCreados;
     }
+    
+    public int cambiarExtensionFicheros(String ruta, String extensionAntigua, String extensionNueva ) {
+        int numeroFicherosModificados = 0;
+        try {
+            List<File> ficherosACambiarExtension = listarFicheros(ruta, true, true);
+        } catch (Excepciones.carpetaVacia ex) {
+            Logger.getLogger(OperacionesFicheros.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Excepciones.noEsUnDirectorioNoSePuedeListar ex) {
+            Logger.getLogger(OperacionesFicheros.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        FileNameFilter filtroExtensiones = new FilenameFilter() {
+            @Override
+            public boolean accept(File ruta, String name) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        }
+        
+        
+        return numeroFicherosModificados;
+    }
+    
+//    public int cambiarExtensionFicheros(File ruta, extensionAntigua, extensionNueva) {
+//        int numeroFicherosModificados = 0;
+//        return numeroFicherosModificados;
+//    }
 }
