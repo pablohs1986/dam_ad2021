@@ -24,58 +24,187 @@ public class DistribucionLetras {
             int caracterLeido;
             
             while((caracterLeido = fis.read()) != -1) {
-                if ((char) caracterLeido == 'a'|| (char) caracterLeido == 'á' || (char) caracterLeido == 'A' || (char) caracterLeido == 'Á') {
-                    distribucionLetras.merge('a', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'b'|| (char) caracterLeido == 'B') {
-                    distribucionLetras.merge('b', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'c'|| (char) caracterLeido == 'C') {
-                    distribucionLetras.merge('c', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'd'|| (char) caracterLeido == 'D') {
-                    distribucionLetras.merge('d', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'e'|| (char) caracterLeido == 'E' || (char) caracterLeido == 'é' || (char) caracterLeido == 'É') {
-                    distribucionLetras.merge('e', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'f'|| (char) caracterLeido == 'F') {
-                    distribucionLetras.merge('f', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'g'|| (char) caracterLeido == 'G') {
-                    distribucionLetras.merge('g', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'h'|| (char) caracterLeido == 'H') {
-                    distribucionLetras.merge('h', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'i'|| (char) caracterLeido == 'I'|| (char) caracterLeido == 'í'|| (char) caracterLeido == 'Í') {
-                    distribucionLetras.merge('i', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'j'|| (char) caracterLeido == 'J') {
-                    distribucionLetras.merge('j', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'k'|| (char) caracterLeido == 'K') {
-                    distribucionLetras.merge('k', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'l'|| (char) caracterLeido == 'L') {
-                    distribucionLetras.merge('l', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'm'|| (char) caracterLeido == 'M') {
-                    distribucionLetras.merge('m', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'n'|| (char) caracterLeido == 'N') {
-                    distribucionLetras.merge('n', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'o'|| (char) caracterLeido == 'O'|| (char) caracterLeido == 'ó'|| (char) caracterLeido == 'Ó') {
-                    distribucionLetras.merge('o', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'p'|| (char) caracterLeido == 'P') {
-                    distribucionLetras.merge('p', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'q'|| (char) caracterLeido == 'Q') {
-                    distribucionLetras.merge('q', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'r'|| (char) caracterLeido == 'R') {
-                    distribucionLetras.merge('r', 1, Integer::sum);
-                }else if ((char) caracterLeido == 's'|| (char) caracterLeido == 'S') {
-                    distribucionLetras.merge('s', 1, Integer::sum);
-                }else if ((char) caracterLeido == 't'|| (char) caracterLeido == 'T') {
-                    distribucionLetras.merge('t', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'u'|| (char) caracterLeido == 'U'|| (char) caracterLeido == 'ú'|| (char) caracterLeido == 'Ú')  {
-                    distribucionLetras.merge('u', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'v'|| (char) caracterLeido == 'V') {
-                    distribucionLetras.merge('v', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'w'|| (char) caracterLeido == 'W') {
-                    distribucionLetras.merge('w', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'x'|| (char) caracterLeido == 'X') {
-                    distribucionLetras.merge('x', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'y'|| (char) caracterLeido == 'Y') {
-                    distribucionLetras.merge('y', 1, Integer::sum);
-                }else if ((char) caracterLeido == 'z'|| (char) caracterLeido == 'Z') {
-                    distribucionLetras.merge('z', 1, Integer::sum);
+                switch((char) caracterLeido) {
+                    case 'a':
+                        distribucionLetras.merge('a', 1, Integer::sum);
+                        break;
+                    case 'á':
+                        distribucionLetras.merge('a', 1, Integer::sum);
+                        break;
+                    case 'A':
+                        distribucionLetras.merge('a', 1, Integer::sum);
+                        break;
+                    case 'Á':
+                        distribucionLetras.merge('a', 1, Integer::sum);
+                        break;
+                    case 'b':
+                        distribucionLetras.merge('b', 1, Integer::sum);
+                        break;
+                    case 'B':
+                        distribucionLetras.merge('b', 1, Integer::sum);
+                        break;
+                    case 'c':
+                        distribucionLetras.merge('c', 1, Integer::sum);
+                        break;
+                    case 'C':
+                        distribucionLetras.merge('c', 1, Integer::sum);
+                        break;
+                    case 'd':
+                        distribucionLetras.merge('d', 1, Integer::sum);
+                        break;
+                    case 'D':
+                        distribucionLetras.merge('d', 1, Integer::sum);
+                        break;
+                    case 'e':
+                        distribucionLetras.merge('e', 1, Integer::sum);
+                        break;
+                    case 'é':
+                        distribucionLetras.merge('e', 1, Integer::sum);
+                        break;
+                    case 'E':
+                        distribucionLetras.merge('e', 1, Integer::sum);
+                        break;
+                    case 'É':
+                        distribucionLetras.merge('e', 1, Integer::sum);
+                        break;
+                    case 'f':
+                        distribucionLetras.merge('f', 1, Integer::sum);
+                        break;
+                    case 'F':
+                        distribucionLetras.merge('f', 1, Integer::sum);
+                        break;
+                    case 'g':
+                        distribucionLetras.merge('g', 1, Integer::sum);
+                        break;
+                    case 'G':
+                        distribucionLetras.merge('g', 1, Integer::sum);
+                        break;
+                    case 'h':
+                        distribucionLetras.merge('h', 1, Integer::sum);
+                        break;
+                    case 'H':
+                        distribucionLetras.merge('h', 1, Integer::sum);
+                        break;
+                    case 'i':
+                        distribucionLetras.merge('i', 1, Integer::sum);
+                        break;
+                    case 'í':
+                        distribucionLetras.merge('i', 1, Integer::sum);
+                        break;
+                    case 'I':
+                        distribucionLetras.merge('i', 1, Integer::sum);
+                        break;
+                    case 'Í':
+                        distribucionLetras.merge('i', 1, Integer::sum);
+                        break;
+                    case 'j':
+                        distribucionLetras.merge('j', 1, Integer::sum);
+                        break;
+                    case 'J':
+                        distribucionLetras.merge('j', 1, Integer::sum);
+                        break;
+                    case 'k':
+                        distribucionLetras.merge('k', 1, Integer::sum);
+                        break;
+                    case 'K':
+                        distribucionLetras.merge('k', 1, Integer::sum);
+                        break;
+                    case 'l':
+                        distribucionLetras.merge('l', 1, Integer::sum);
+                        break;
+                    case 'L':
+                        distribucionLetras.merge('l', 1, Integer::sum);
+                        break;
+                    case 'm':
+                        distribucionLetras.merge('m', 1, Integer::sum);
+                        break;
+                    case 'M':
+                        distribucionLetras.merge('m', 1, Integer::sum);
+                        break;
+                    case 'n':
+                        distribucionLetras.merge('n', 1, Integer::sum);
+                        break;
+                    case 'N':
+                        distribucionLetras.merge('n', 1, Integer::sum);
+                        break;
+                    case 'o':
+                        distribucionLetras.merge('o', 1, Integer::sum);
+                        break;
+                    case 'ó':
+                        distribucionLetras.merge('o', 1, Integer::sum);
+                        break;
+                    case 'O':
+                        distribucionLetras.merge('o', 1, Integer::sum);
+                        break;
+                    case 'Ó':
+                        distribucionLetras.merge('o', 1, Integer::sum);
+                        break;
+                    case 'p':
+                        distribucionLetras.merge('p', 1, Integer::sum);
+                        break;
+                    case 'P':
+                        distribucionLetras.merge('p', 1, Integer::sum);
+                        break;
+                    case 'q':
+                        distribucionLetras.merge('q', 1, Integer::sum);
+                        break;
+                    case 'Q':
+                        distribucionLetras.merge('q', 1, Integer::sum);
+                        break;
+                    case 'r':
+                        distribucionLetras.merge('r', 1, Integer::sum);
+                        break;
+                    case 'R':
+                        distribucionLetras.merge('r', 1, Integer::sum);
+                        break;
+                    case 's':
+                        distribucionLetras.merge('s', 1, Integer::sum);
+                        break;
+                    case 'S':
+                        distribucionLetras.merge('s', 1, Integer::sum);
+                        break;
+                    case 't':
+                        distribucionLetras.merge('t', 1, Integer::sum);
+                        break;
+                    case 'T':
+                        distribucionLetras.merge('t', 1, Integer::sum);
+                        break;
+                    case 'u':
+                        distribucionLetras.merge('u', 1, Integer::sum);
+                        break;
+                    case 'U':
+                        distribucionLetras.merge('u', 1, Integer::sum);
+                        break;
+                    case 'v':
+                        distribucionLetras.merge('v', 1, Integer::sum);
+                        break;
+                    case 'V':
+                        distribucionLetras.merge('v', 1, Integer::sum);
+                        break;
+                    case 'w':
+                        distribucionLetras.merge('w', 1, Integer::sum);
+                        break;
+                    case 'W':
+                        distribucionLetras.merge('w', 1, Integer::sum);
+                        break;
+                    case 'x':
+                        distribucionLetras.merge('x', 1, Integer::sum);
+                        break;
+                    case 'X':
+                        distribucionLetras.merge('x', 1, Integer::sum);
+                        break;
+                    case 'y':
+                        distribucionLetras.merge('y', 1, Integer::sum);
+                        break;
+                    case 'Y':
+                        distribucionLetras.merge('y', 1, Integer::sum);
+                        break;
+                    case 'z':
+                        distribucionLetras.merge('z', 1, Integer::sum);
+                        break;
+                    case 'Z':
+                        distribucionLetras.merge('z', 1, Integer::sum);
+                        break;
                 }
             }
             
