@@ -6,6 +6,7 @@
 package controlador;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import modelo.CifradoCesar;
@@ -33,19 +34,22 @@ public class Main {
 //        }
         
         // Apartado Distribución Letras
-        File archivoTextoCastellano = new File("textos" + File.separator + "lazarilloDeTormes_CASTELLANO.txt");
-        File archivoTextoIngles= new File("textos" + File.separator + "lazarilloDeTormes_INGLES.txt");
-        File prueba = new File("textos/prueba.txt");
+        File archivoTextoLazarilloCastellano = new File("textos" + File.separator + "lazarilloDeTormes_CASTELLANO.txt");
+        File archivoTextoLazarilloIngles= new File("textos" + File.separator + "lazarilloDeTormes_INGLES.txt");
         DistribucionLetras distribucion = new DistribucionLetras();
+        HashMap<Character, Integer> distribucionLetrasLazarilloCastellano;
+        HashMap<Character, Integer> distribucionLetrasLazarilloIngles;
         
         try {
-            distribucion.calcularDistribucionLetrasTexto(archivoTextoCastellano);
+            distribucionLetrasLazarilloCastellano = distribucion.calcularDistribucionLetrasTexto(archivoTextoLazarilloCastellano);
+            System.out.println(distribucionLetrasLazarilloCastellano);
         } catch (Exception ex) {
             ex.getMessage();
         }
         
         try {
-            distribucion.calcularDistribucionLetrasTexto(archivoTextoIngles);
+            distribucionLetrasLazarilloIngles = distribucion.calcularDistribucionLetrasTexto(archivoTextoLazarilloIngles);
+            System.out.println(distribucionLetrasLazarilloIngles);
         } catch (Exception ex) {
             ex.getMessage();
         }
