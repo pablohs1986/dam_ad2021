@@ -11,21 +11,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Clase con un método para calcular la distribución de las letras en un texto.
+ * Clase con un métodos para calcular la distribución de las letras y el
+ * histograma de un texto.
  *
- * @version 1.0, 06/11/2020
+ * @version 1.1, 09/11/2020
  * @author Pablo Herrero
  */
 public class DistribucionLetras {
 
- 
-
     /**
-     * Calcula la distribución de las letras del archivo de texto que recibe
-     * y cuenta el total de letras del mismo.
+     * Calcula la distribución de las letras del archivo de texto que recibe y
+     * cuenta el total de letras del mismo.
      *
      * @param archivoTexto Archivo de texto sobre el que realizar la acción.
-     * @return Devuelve un HashMap con la distribución de letras del texto.
+     * @return HashMap con la distribución de letras del texto.
      * @throws java.lang.Exception si el archivo no es un archivo de texto.
      */
     public HashMap<Character, Integer> calcularDistribucionLetrasTexto(File archivoTexto) throws Exception {
@@ -33,7 +32,7 @@ public class DistribucionLetras {
         int totalLetras = 0;
 
         if (archivoTexto.getName().endsWith(".txt")) {                      // Compruebo si el archivo es un .txt. De ser así, prosigo, si no, lanzo excepción.
-            FileInputStream fis = new FileInputStream(archivoTexto);        
+            FileInputStream fis = new FileInputStream(archivoTexto);
             int caracterLeido;
 
             while ((caracterLeido = fis.read()) != -1) {                    // Recorro el stream, usando un switch para clasificar el caracter leido y asociarle una acción.
@@ -282,19 +281,26 @@ public class DistribucionLetras {
             }
 
             fis.close();
-            System.out.println("\nCalculando la distribución de letras para el archivo " + "\"" + archivoTexto.getName() + "\"" + " con un total de " + totalLetras + " letras.");
+            System.out.println("\nCalculando la distribución de letras para el archivo " + "\"" + archivoTexto.getName() + "\"" + " con un total de " + totalLetras + " letras:");
 
         } else {
             throw new Exception("El archivo " + archivoTexto.getName() + " no es un documento de texto. Operación cancelada.");
         }
         return distribucionLetras;
     }
-    
+
+    /**
+     * Genera un histograma (diagrama de barras horizontal) a partir de la
+     * distribución de letras que recibe.
+     *
+     * @param distribucionLetras HashMap con la distribución de letras sobre en
+     * la que se basa el histograma.
+     */
     public static void generarHistograma(HashMap<Character, Integer> distribucionLetras) {
-        String a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s,t,u,v,w,x,y,z;
-        
+        String a, b, c, d, e, f, g, h, i, j, k, l, m, n, ñ, o, p, q, r, s, t, u, v, w, x, y, z;
+
         System.out.println("\n___Histograma___");
-        
+
         for (Map.Entry<Character, Integer> entry : distribucionLetras.entrySet()) {
             switch (entry.getKey()) {
                 case 'a':
@@ -451,9 +457,15 @@ public class DistribucionLetras {
                     break;
             }
         }
-            System.out.println("________________");
+        System.out.println("________________");
     }
-    
+
+    /**
+     * Gnera una cadena con la cantidad de asteriscos que se le indica.
+     *
+     * @param cantidad El número de asteriscos que se desea generar.
+     * @return Cadena de asteriscos.
+     */
     public static String generarAsteriscos(int cantidad) {
         StringBuilder cadena = new StringBuilder();
         for (int i = 0; i < cantidad; i++) {
@@ -461,6 +473,5 @@ public class DistribucionLetras {
         }
         return cadena.toString();
     }
-    
+
 }
- 
