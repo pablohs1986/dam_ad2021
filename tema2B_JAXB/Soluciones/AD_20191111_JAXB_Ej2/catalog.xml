@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/gonza/Documents/ProyectosNetBeans/DAM2_AD/AD_20191111_JAXB_Ej2/clientes.xsd" uri="xml-resources/jaxb/BindingClientes/clientes.xsd"/>
+    <system systemId="file:/Users/joseluisarias/Dropbox/20192020/20192020ADp/UT02/02JAXB/soluciones/AD_20191111_JAXB_Ej2/../../../../../../../NetBeansProjects/JAXB/clientes.xsd" uri="xml-resources/jaxb/jaxbBind2/clientes.xsd"/>
+</catalog>
