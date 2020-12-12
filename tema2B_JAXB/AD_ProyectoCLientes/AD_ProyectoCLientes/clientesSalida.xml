@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<clientes>
+    <cliente>
+        <apellido>String</apellido>
+        <apellido>String</apellido>
+        <direccion>
+            <calle>String</calle>
+            <numero>String</numero>
+            <piso>0</piso>
+            <escalera>c</escalera>
+            <cp>0</cp>
+            <ciudad>String</ciudad>
+        </direccion>
+        <direccion>
+            <calle>String</calle>
+            <numero>String</numero>
+            <piso>0</piso>
+            <escalera>a</escalera>
+            <cp>0</cp>
+            <ciudad>String</ciudad>
+        </direccion>
+        <telefono>String</telefono>
+        <nombre/>
+    </cliente>
+    <cliente>
+        <apellido>String</apellido>
+        <apellido>String</apellido>
+        <direccion>
+            <calle>String</calle>
+            <numero>String</numero>
+            <piso>0</piso>
+            <escalera>a</escalera>
+            <cp>0</cp>
+            <ciudad>String</ciudad>
+        </direccion>
+        <direccion>
+            <calle>String</calle>
+            <numero>String</numero>
+            <piso>0</piso>
+            <escalera>c</escalera>
+            <cp>0</cp>
+            <ciudad>String</ciudad>
+        </direccion>
+        <direccion>
+            <calle>String</calle>
+            <numero>String</numero>
+            <piso>0</piso>
+            <escalera>c</escalera>
+            <cp>0</cp>
+            <ciudad>String</ciudad>
+        </direccion>
+        <telefono>String</telefono>
+        <nombre/>
+    </cliente>
+    <cliente>
+        <apellido>García</apellido>
+        <apellido>García</apellido>
+        <direccion>
+            <calle>Calle 1</calle>
+            <numero>26</numero>
+            <piso>2</piso>
+            <escalera>1</escalera>
+            <cp>33006</cp>
+            <ciudad>Oviedo</ciudad>
+        </direccion>
+        <direccion>
+            <calle>Calle 2</calle>
+            <numero>26</numero>
+            <piso>2</piso>
+            <escalera>1</escalera>
+            <cp>33006</cp>
+            <ciudad>Gijon</ciudad>
+        </direccion>
+        <telefono>666111222</telefono>
+        <nombre lenguaje="Español"/>
+    </cliente>
+</clientes>

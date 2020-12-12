@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/pablo/Documents/DAM/Segundo/AD/Repositorio/tema2B_JAXB/ad_agenda_jaxb/esquemaAgenda.xsd" uri="xml-resources/jaxb/AgendaBind/esquemaAgenda.xsd"/>
+    <system systemId="file:/C:/Users/pablo/Documents/DAM/Segundo/AD/Repositorio/tema2B_JAXB/ad_agenda_jaxb/esquemaAgenda_mio.xsd" uri="xml-resources/jaxb/AgendaBind/esquemaAgenda_mio.xsd"/>
+</catalog>

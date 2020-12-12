@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<agenda>
+    <alarmas>
+        <alarma prioridad="2" tono="String">
+            <diaHora>
+                <dia>
+                    <dia>0</dia>
+                    <mes>0</mes>
+                    <año>0</año>
+                </dia>
+                <hora>
+                    <hora>0</hora>
+                    <minuto>0</minuto>
+                    <segundo>0.0</segundo>
+                </hora>
+            </diaHora>
+            <asunto>String</asunto>
+        </alarma>
+        <alarma prioridad="1" tono="String">
+            <diaHora>
+                <dia>
+                    <dia>0</dia>
+                    <mes>0</mes>
+                    <año>0</año>
+                </dia>
+                <hora>
+                    <hora>0</hora>
+                    <minuto>0</minuto>
+                    <segundo>0.0</segundo>
+                </hora>
+            </diaHora>
+            <asunto>String</asunto>
+        </alarma>
+        <alarma prioridad="1">
+            <diaHora>
+                <dia>
+                    <dia>0</dia>
+                    <mes>0</mes>
+                    <año>0</año>
+                </dia>
+                <hora>
+                    <hora>0</hora>
+                    <minuto>0</minuto>
+                </hora>
+            </diaHora>
+            <asunto>ALARMA AÑADIDA</asunto>
+        </alarma>
+    </alarmas>
+    <correos>
+        <correo EntradaoSalida="Entrada">
+            <remitente>Pepe</remitente>
+            <destinatario>String</destinatario>
+            <destinatario>String</destinatario>
+            <asunto>String</asunto>
+            <imagenes extension="String">String</imagenes>
+            <imagenes extension="String">String</imagenes>
+        </correo>
+        <correo EntradaoSalida="Entrada">
+            <remitente>Jacinta</remitente>
+            <destinatario>String</destinatario>
+            <destinatario>String</destinatario>
+            <asunto>String</asunto>
+            <imagenes extension="String">String</imagenes>
+            <imagenes extension="String">String</imagenes>
+        </correo>
+        <correo EntradaoSalida="Salida">
+            <remitente>Josefa</remitente>
+            <destinatario>String</destinatario>
+            <destinatario>String</destinatario>
+            <asunto>String</asunto>
+            <imagenes extension="String">String</imagenes>
+            <imagenes extension="String">String</imagenes>
+        </correo>
+    </correos>
+    <contactos>
+        <contacto>
+            <nombre idioma="ES" empresaSiNo="NO">String</nombre>
+            <telefono>000 000 000</telefono>
+            <telefono>000 000 000</telefono>
+        </contacto>
+    </contactos>
+</agenda>
