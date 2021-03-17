@@ -1,0 +1,59 @@
+[
+    {
+        "titulo": "Sue–osIA",
+        "totalPaginas": 210,
+        "precio": 10,
+        "autores": [{
+                "nombre": "Javier",
+                "apellido": "PŽrez"
+            },
+            {
+                "nombre": "Mar’a",
+                "apellido": "Rodriguez"
+            }],
+        "generos": [{
+                "genero": "novela"
+
+            }, {
+                "genero": "ficci—n"
+            }]
+    },
+    {
+        "titulo": "JSONpara todos",
+        "totalPaginas": 310,
+        "precio": 20,
+        "autores": [{
+                "nombre": "Ana",
+                "apellido": "Cota"
+            },
+            {
+                "nombre": "Mar",
+                "apellido": "Fern‡ndez"
+            }],
+        "generos": [{
+                "genero": "inform‡tica"
+
+            }, {
+                "genero": "JSON"
+            }]
+    },
+    {
+        "titulo": "JSON para todos2",
+        "totalPaginas": 3102,
+        "precio": 202,
+        "autores": [{
+                "nombre": "Ana2",
+                "apellido": "Cota2"
+            },
+            {
+                "nombre": "Mar2",
+                "apellido": "Fern‡ndez2"
+            }],
+        "generos": [{
+                "genero": "inform‡tica2"
+
+            }, {
+                "genero": "JSON2"
+            }]
+    }
+   ]

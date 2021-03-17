@@ -4,9 +4,9 @@
         <alarma prioridad="2" tono="String">
             <diaHora>
                 <dia>
-                    <dia>0</dia>
-                    <mes>0</mes>
-                    <año>0</año>
+                    <dia>20</dia>
+                    <mes>10</mes>
+                    <año>1900</año>
                 </dia>
                 <hora>
                     <hora>0</hora>

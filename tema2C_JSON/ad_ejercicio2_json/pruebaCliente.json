@@ -1,0 +1,26 @@
+{
+    "apellido": [
+        "asd",
+        "asd"
+    ],
+    "direccion": [
+        {
+            "calle": "asdads",
+            "numero": 1,
+            "piso": 1,
+            "escalera": "a",
+            "cp": 33006,
+            "ciudad": "Oviedo"
+        },
+        {
+            "calle": "qweq",
+            "numero": 2,
+            "piso": 2,
+            "escalera": "q",
+            "cp": 24404,
+            "ciudad": "Ponferrada"
+        }
+    ],
+    "telefono": 627107436,
+    "nombre": "pepe"
+}

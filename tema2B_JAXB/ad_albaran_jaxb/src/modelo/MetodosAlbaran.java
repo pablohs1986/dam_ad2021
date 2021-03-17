@@ -45,7 +45,7 @@ public class MetodosAlbaran implements InterfaceAlbaran {
     public JAXBElement unmarshalizar(File ficheroXML) throws JAXBException {
         JAXBContext contexto = JAXBContext.newInstance("jaxb.Albaran");
         Unmarshaller unmarshalizador = contexto.createUnmarshaller();
-        JAXBElement elemento = unmarshalizador.unmarshal(new StreamSource("albaran.xml"), PedidoType.class);
+        JAXBElement elemento = unmarshalizador.unmarshal(new StreamSource(ficheroXML), PedidoType.class);
         return elemento;
     }
 

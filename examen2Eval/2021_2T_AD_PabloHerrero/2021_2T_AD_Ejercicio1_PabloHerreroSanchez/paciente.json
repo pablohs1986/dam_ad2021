@@ -1,0 +1,68 @@
+{
+	"clinica": {
+		"paciente": [
+			{
+				"numeroSS": 1,
+				"nombre": "Nombre1",
+				"apellido": "Apellido1",
+				"citas": [
+					{
+						"dia": 1,
+						"tramo": 1,
+						"numeroColegiado": 1111
+					},
+					{
+						"dia": 1,
+						"tramo": 2,
+						"numeroColegiado": 2222
+					}
+				],
+				"especialistasAsignados": [
+					{
+						"numeroColegiado": 1111,
+						"especialidad": "Especialidad1",
+						"nombre": "NombreEspecialista1",
+						"apellido": "ApellidoEspecialista1"
+					},
+					{
+						"numeroColegiado": 2222,
+						"especialidad": "Especialidad2",
+						"nombre": "NombreEspecialista2",
+						"apellido": "ApellidoEspecialista2"
+					}
+				]
+			},
+			{
+				"numeroSS": 2,
+				"nombre": "Nombre2",
+				"apellido": "Apellido2",
+				"citas": [
+					{
+						"dia": 2,
+						"tramo": 2,
+						"numeroColegiado": 3333
+					},
+					{
+						"dia": 2,
+						"tramo": 3,
+						"numeroColegiado": 4444
+					}
+				],
+				"especialistasAsignados": [
+					{
+						"numeroColegiado": 2222,
+						"especialidad": "Especialidad2",
+						"nombre": "NombreEspecialista2",
+						"apellido": "ApellidoEspecialista2"
+					},
+					{
+						"numeroColegiado": 4444,
+						"especialidad": "Especialidad4",
+						"nombre": "NombreEspecialista4",
+						"apellido": "ApellidoEspecialista4"
+					}
+				]
+			}
+		]
+	}
+}

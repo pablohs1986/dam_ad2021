@@ -47,7 +47,7 @@ public class Main {
             metodos.aniadirTelefonoAContacto(nodoAgenda, "PEPE", "666666666");
             
             // Apartado 3 
-            metodos.verCorreos(nodoAgenda);
+            System.out.println(metodos.resumenCorreos(nodoAgenda));
             
             // Apartado 4
             List<String> listaTelefonosContacto = metodos.buscarTelefono(nodoAgenda, "pepe");

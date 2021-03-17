@@ -45,7 +45,7 @@ public class metodosAgenda implements interfaceAgenda {
     public JAXBElement unmarshalizar(File ficheroXML) throws JAXBException {
         JAXBContext contexto = JAXBContext.newInstance("jaxb.agenda");
         Unmarshaller unmarshalizador = contexto.createUnmarshaller();
-        JAXBElement elemento = unmarshalizador.unmarshal(new StreamSource("agenda.xml"), Agenda.class);
+        JAXBElement elemento = unmarshalizador.unmarshal(new StreamSource(ficheroXML), Agenda.class);
         return elemento;
     }
 
@@ -105,19 +105,17 @@ public class metodosAgenda implements interfaceAgenda {
     }
 
     @Override
-    public void verCorreos(Agenda agenda) {
-        Agenda.Correos nodoCorreos = agenda.getCorreos();
-
-        List<CorreoType> listaCorreos = nodoCorreos.getCorreo();
+    public String resumenCorreos(Agenda agenda) {
+        String respuesta = "";
         int totalCorreos = 0;
+        Agenda.Correos nodoCorreos = agenda.getCorreos();
+        List<CorreoType> listaCorreos = nodoCorreos.getCorreo();
 
         for (CorreoType correo : listaCorreos) {
-            System.out.println("Asunto: " + correo.getAsunto());
-            System.out.println("Remitente: " + correo.getRemitente());
+            respuesta += "Remitente: " + correo.getRemitente() + " Asunto: " + correo.getAsunto();
         }
-        totalCorreos++;
-        System.out.println("___");
-        System.out.println("Total correos: " + totalCorreos);
+        respuesta += "\n Total correos: " + totalCorreos++;
+        return respuesta;
     }
 
     @Override

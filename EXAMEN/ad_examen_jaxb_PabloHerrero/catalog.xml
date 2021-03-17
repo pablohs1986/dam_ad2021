@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/pablo/Documents/DAM/Segundo/AD/Repositorio/EXAMEN/ad_examen_jaxb_PabloHerrero/fitness2.xsd" uri="xml-resources/jaxb/FitnessBind/fitness2.xsd"/>
+</catalog>

@@ -26,7 +26,7 @@ public interface interfaceAgenda {
     
     public void aniadirTelefonoAContacto(Agenda agenda, String nombre, String telefono);
     
-    public void verCorreos(Agenda agenda);
+    public String resumenCorreos(Agenda agenda);
     
     public List<String> buscarTelefono(Agenda agenda, String nombreContacto);
     

@@ -1,0 +1,48 @@
+[
+    {
+        "titulo": "Sue�os IA",
+        "totalPaginas": 210,
+        "precio": 10,
+        "autores": [
+            {
+                "nombre": "Javier",
+                "apellido": "P�rez"
+            },
+            {
+                "nombre": "Mar�a",
+                "apellido": "Rodriguez"
+            }
+        ],
+        "generos": [
+            {
+                "genero": "novela"
+            },
+            {
+                "genero": "ficci�n"
+            }
+        ]
+    },
+    {
+        "titulo": "JSON para todos",
+        "totalPaginas": 310,
+        "precio": 20,
+        "autores": [
+            {
+                "nombre": "Javier",
+                "apellido": "P�rez"
+            },
+            {
+                "nombre": "Mar�a",
+                "apellido": "Rodriguez"
+            }
+        ],
+        "generos": [
+            {
+                "genero": "novela"
+            },
+            {
+                "genero": "ficci�n"
+            }
+        ]
+    }
+]

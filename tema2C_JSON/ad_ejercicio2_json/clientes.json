@@ -1,0 +1,97 @@
+{
+	"clientes": {
+		"cliente": [
+			{
+				"apellido": [
+					"aaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaa"
+				],
+				"direccion": [
+					{
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "c",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}, {
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "a",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}, {
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "b",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}
+				],
+				"telefono": "aaaaaaaaaaaaaaaaaaaa",
+				"nombre": "String"
+			}, {
+				"apellido": [
+					"aaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaa"
+				],
+				"direccion": [
+					{
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "b",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}, {
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "c",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}, {
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "b",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}
+				],
+				"telefono": "aaaaaaaaaaaaaaaaaaaa",
+				"nombre": "String"
+			}, {
+				"apellido": [
+					"aaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaa"
+				],
+				"direccion": [
+					{
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "c",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}, {
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "c",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}, {
+						"calle": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"numero": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+						"piso": 0,
+						"escalera": "b",
+						"cp": 12345,
+						"ciudad": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+					}
+				],
+				"telefono": "aaaaaaaaaaaaaaaaaaaa",
+				"nombre": "String"
+			}
+		]
+	}
+}

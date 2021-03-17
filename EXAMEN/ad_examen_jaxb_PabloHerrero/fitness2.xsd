@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Jose (A) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="fitness">
+		<xs:annotation>
+			<xs:documentation>Personal Fitness app</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="users">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="user">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="userType">
+											<xs:sequence>
+												<xs:element name="favoriteExecises" maxOccurs="unbounded">
+													<xs:complexType>
+														<xs:complexContent>
+															<xs:extension base="exerciseType">
+																<xs:sequence>
+																	<xs:element name="date"/>
+																</xs:sequence>
+															</xs:extension>
+														</xs:complexContent>
+													</xs:complexType>
+												</xs:element>
+												<xs:element name="asignedWorkouts" maxOccurs="unbounded">
+													<xs:complexType>
+														<xs:complexContent>
+															<xs:extension base="workoutType">
+																<xs:sequence>
+																	<xs:element name="workoutDone" type="xs:boolean"/>
+																</xs:sequence>
+															</xs:extension>
+														</xs:complexContent>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="workouts">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="workout" type="workoutType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="exerciseType">
+		<xs:sequence>
+			<xs:element name="exerciseName" type="xs:string"/>
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="URLVideo" type="xs:string"/>
+			<xs:element name="duration" type="xs:int"/>
+			<xs:element name="reps" type="xs:int"/>
+			<xs:element name="calories" type="xs:int"/>
+			<xs:element name="dificulty" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="workoutType">
+		<xs:sequence>
+			<xs:element name="workoutName" type="xs:string"/>
+			<xs:element name="exercise" type="exerciseType" maxOccurs="unbounded"/>
+			<xs:element name="totalCalories" type="xs:int"/>
+			<xs:element name="difficulty" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="userType">
+		<xs:sequence>
+			<xs:element name="userID" type="xs:int"/>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="weight" type="xs:float"/>
+			<xs:element name="height" type="xs:float"/>
+			<xs:element name="imc" type="xs:float"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

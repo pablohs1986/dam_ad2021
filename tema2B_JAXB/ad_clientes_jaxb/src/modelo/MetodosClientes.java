@@ -41,7 +41,7 @@ public class MetodosClientes implements InterfaceClientes {
     public JAXBElement unmarshalizar(File ficheroXML) throws JAXBException {
         JAXBContext contexto = JAXBContext.newInstance("jaxb.clientes");
         Unmarshaller unmarshalizador = contexto.createUnmarshaller();
-        JAXBElement elemento = unmarshalizador.unmarshal(new StreamSource("clientes.xml"), Clientes.class);
+        JAXBElement elemento = unmarshalizador.unmarshal(new StreamSource(ficheroXML), Clientes.class);
         return elemento;
     }
 
